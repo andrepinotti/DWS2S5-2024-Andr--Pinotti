@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar__header">
+            <ul>
+                <a href="inicio.html"><li class="open-sans">Início</li></a>
+                <a href="busca.html"><li class="open-sans">Busca</li></a>
+                <a href="form.html"><li class="open-sans">Formulário/Tabela</li></a>
+                <a href="post.html"><li class="open-sans">Postagem c/ imagem</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title__form montserrat">
+        Formulário de Cadastro e Tabela com dados
+    </h1>
+
+<div class="main__container">
+    <div class="forms">
+        <form action="" method="get">
+            <div class="form__group">
+                <label for="nome">Nome Completo</label> <br>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class="form__group">
+                <label for="telefone" class="label">Telefone</label> <br>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div class="form__group">
+                <label for="email" >E-mail</label> <br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form__group2">
+                <label for="estado" >Estado de Residência</label>
+                <select name="estado" id="estado" >
+                    <option value="" disabled selected>Selecione um estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sc">Santa Catarina</option>
+                </select>
+            </div>
+    
+            <div class="button__input ">
+                <input type="submit" class="montserrat">
+            </div>
+
+            <div class="button__reset" class="montserrat">
+                <input type="reset">
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="table__data">
+        <table class="table__design">
+            <tr>
+                <th class="roboto-thin">Nome</th>
+                <th class="roboto-thin">Telefone</th>
+                <th class="roboto-thin">Email</th>
+                <th class="roboto-thin">Estado</th>
+            </tr>
+            <tr class="line__grey">
+                <td>José da Silva</td>
+                <td>(11) 99785-4871</td>
+                <td>josesilva11@gmail.com</td>
+                <td>Santa Catarina</td>
+            </tr>
+            <tr>
+                <td>Marcos William Freitas</td>
+                <td>(11) 99784-4812</td> 
+                <td>mwfreitas@microsoft.com </td>
+                <td>São Paulo</td>
+            </tr>
+            <tr class="line__grey">
+                <td>Ana Luiza dos Reis Barco</td>
+                <td>(14) 81745-4812</td>
+                <td>anareis@microsoft.com</td>
+                <td>São Paulo</td>       
+            </tr>
+            <tr>
+                <td>Kella Santanna de Souza</td>
+                <td>(17) 99744-1155</td>
+                <td>kella.santanna@outlook.com</td>
+                <td>São Paulo</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

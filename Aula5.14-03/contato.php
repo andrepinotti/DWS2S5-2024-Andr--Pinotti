@@ -27,7 +27,7 @@
         
 <!-- d-flex justify-content-center -->
         <div class="d-flex justify-content-center ">
-            <button class="btn btn-primary mr-2" type="submit">Enviar</button>
+            <button class="btn btn-primary me-2" type="submit">Enviar</button>
             <button class="btn btn-warning" type="reset">Limpar</button>
         </div>        
 

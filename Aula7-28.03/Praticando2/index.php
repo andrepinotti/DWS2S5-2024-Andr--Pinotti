@@ -1,25 +1,7 @@
 <?php
 
     
-
-
-    // if (isset($_GET['nome'], $_GET['email'], $_GET['cor'])) {
-            
-    //     $nome = $_GET['nome'];
-    //     $email = $_GET['email'];
-    //     $cor = $_GET['cor'];
-        
-    //         //uma hora
-    //     setcookie('nome', $nome, time() + 3600, '/');
-    //     setcookie('email', $email, time() + 3600, '/');
-    //     setcookie('cor', $cor, time() + 3600, '/');
-    //     } 
-    // else {
-    //     $nome = $_COOKIE['nome'] ?? '';
-    //     $email = $_COOKIE['email'] ?? '';
-    //     $cor = $_COOKIE['cor'] ?? '';
-    // }
-                   
+         
 
     $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
     $email = filter_input(INPUT_GET, 'email', FILTER_SANITIZE_EMAIL);
@@ -40,15 +22,6 @@
     
 
 
-    // if(isset($_GET['cor'])){
-    //     $cor = $_GET['cor'];
-    //     if($cor == 'green' || $cor == 'red' || $cor == 'blue' ){
-    //         echo $cor;
-    //     }
-    //     else if(empty($cor)){
-    //         echo "#fff";
-    //     }
-    // }
 
 
 ?>
@@ -115,17 +88,13 @@
 
 
     <?php 
-    
-
-        // echo "<p> <h3>Nome: $nome</h3><p>
-        //         <h3>Email: $email</h3><p>"
 
         if ($nome) {
-            echo "<p>Nome: $nome</p>";
+            echo "<h3>Nome: $nome</h3>";
           }  
     
           if ($email) {
-            echo "<p>Email: $email</p>";
+            echo "<h3>Email: $email</h3>";
           }
 
     ?>

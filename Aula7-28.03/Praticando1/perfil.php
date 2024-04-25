@@ -3,9 +3,11 @@
     date_default_timezone_get('America/Sao_Paulo');
 
     if(!isset($_SESSION['user']) || empty($_SESSION['user'])){
-        $_SESSION['erro'] = "Você está tentando acessar uma página restrita";
+        $_SESSION['erro'] = "Você está tentando acessar uma página restrita!";
         header("Location: index.php");
+        exit();
     }
+
 
 
     require "header.php";

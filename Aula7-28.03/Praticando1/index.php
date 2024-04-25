@@ -21,7 +21,8 @@
 
 
            <?php
-                if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
+                if(!isset($_SESSION['user'])){
+                    if(isset($_SESSION['erro']) && !empty($_SESSION['erro'])){
            ?> 
                 <div class="alert alert-warning">
                     <p>
@@ -29,21 +30,12 @@
                     </p>
                 </div>                    
             <?php
-                }         
-            ?>
-
-            <?php
-               
-                if(!isset($_SESSION['user']) && basename($_SERVER['PHP_SELF']) == 'perfil.php'){
-            ?>
-                <div class="alert alert-warning">
-                    <p>
-                        <?= $_SESSION['erro']?>
-                    </p>
-                </div>
-            <?php
+                    unset($_SERVER['erro']);
+                    }   
                 }
             ?>
+
+            
 
 </div>
 <?php

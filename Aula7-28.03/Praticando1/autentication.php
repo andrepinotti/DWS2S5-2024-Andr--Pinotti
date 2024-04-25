@@ -4,6 +4,7 @@
     if(isset($_SESSION['user']) && !empty($_SESSION['user'])){
         $_SESSION['erro'] = "Você já está autenticado!";
         header("Location: index.php");
+        exit();
     }
 
     require "header.php";

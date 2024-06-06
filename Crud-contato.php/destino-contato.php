@@ -24,11 +24,12 @@ require 'header.php'
         echo "<p>Data: " . date("d/m/Y - H:i:s") . "</p>";
 
         
+        
         $sql = "insert into contato (nome, email, mensagem) values (?, ?, ?)";
 
         try {
             $stmt = $conn->prepare($sql);
-            $result = $stmt->execute([$nome, $email, $senha]);
+            $result = $stmt->execute([$nome, $email, $msg]);
         } catch (Exception $e) {
             $result = false;
             $error = $e->getMessage();

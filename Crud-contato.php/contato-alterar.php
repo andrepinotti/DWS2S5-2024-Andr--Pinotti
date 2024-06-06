@@ -15,8 +15,7 @@ if(empty($id)){
     exit;
 }
 
-$sql = "select nome,
-                DATE_FORMAT(datahora, '%d/%m/%Y %H:%i:%s') as datahora 
+$sql = "select nome, email, DATE_FORMAT(datahora, '%d/%m/%Y %H:%i:%s') as datahora, mensagem 
         FROM contato where ID = ?";
 $stmt = $conn->prepare($sql);
 $stmt->execute([$id]);
@@ -31,7 +30,7 @@ $registroContato = $stmt->fetch();
 
     <div class="row">
         <div class="col-8 offset-2">
-            <form class="row g-3" action="destino-contato.php" method="POST">
+            <form class="row g-3" action="destino-contato-alterar.php" method="POST">
                 <input type="hidden" name="id" value="<?=$id?>">
                 <div class="col-6">
                     <div class="mb-2">
@@ -50,7 +49,7 @@ $registroContato = $stmt->fetch();
                 <div class="col-12">
                     <div class="mb-2">
                         <label for="email">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required><?=$registroContato["mensagem"]?></textarea>
+                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required value="<?=$registroContato["mensagem"]?>"></textarea>
                     </div>
                 </div>
                 <div class="col-12">

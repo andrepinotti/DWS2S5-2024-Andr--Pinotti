@@ -13,7 +13,7 @@ require 'header.php'
                 <div class="col-6">
                     <div class="mb-2">
                         <label for="nome">Nome:</label>
-                        <input class="form-control" type="text" name="nome" id="nome" required autofocus>
+                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome" required autofocus>
                     </div>
                 </div>
                 <div class="col-6">
@@ -25,7 +25,7 @@ require 'header.php'
                 <div class="col-12">
                     <div class="mb-2">
                         <label for="msg">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required></textarea>
+                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" placeholder="Digite uma mensagem" required></textarea>
                     </div>
                 </div>
 

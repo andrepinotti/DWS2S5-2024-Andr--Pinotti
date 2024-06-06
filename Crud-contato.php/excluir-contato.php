@@ -7,9 +7,10 @@ require 'header.php'
     </div>
     <div class="row">
         <?php
-        $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
         require "conexao.php";
+
+        $id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
 
         $sql = "delete from contato where ID = ?";
 

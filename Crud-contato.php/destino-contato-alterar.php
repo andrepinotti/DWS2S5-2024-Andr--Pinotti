@@ -23,7 +23,7 @@ require 'header.php'
         echo "<p>ID: $id</p>";
         echo "<p>Nome informado: $nome</p>";
         echo "<p>Email: $email</p>";
-        echo "<p>mensagem: $msg</p>";
+        echo "<p>Mensagem: $msg</p>";
 
         $sql = "update contato SET nome = ?, email = ?, mensagem = ? where id = ?";
 

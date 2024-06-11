@@ -49,7 +49,7 @@ $registroContato = $stmt->fetch();
                 <div class="col-12">
                     <div class="mb-2">
                         <label for="email">Mensagem</label>
-                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required value="<?=$registroContato["mensagem"]?>"></textarea>
+                        <textarea class="form-control" name="msg" id="msg" cols="30" rows="3" required ><?=$registroContato["mensagem"]?></textarea>
                     </div>
                 </div>
                 <div class="col-12">
